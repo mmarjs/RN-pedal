@@ -1,0 +1,16 @@
+import { Metrics } from '../Themes'
+
+const height = Metrics.screenHeight
+const width = Metrics.screenWidth
+
+export const responsiveHeight = (h) => {
+  return height * (h / 100)
+}
+
+export const responsiveWidth = (w) => {
+  return width * (w / 100)
+}
+
+export const responsiveFontSize = (f) => {
+  return Math.sqrt((height * height) + (width * width)) * (f / 100)
+}
